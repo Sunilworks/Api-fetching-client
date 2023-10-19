@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 function Fitness() {
   useEffect(() => {
     axios
-      .get("http://localhost:4500/api/fitness")
+      .get("https://blog-api-fetching.onrender.com/api/fitness")
       .then((res) => console.log(res.json))
       .catch(err => {
        console.log(err.message);

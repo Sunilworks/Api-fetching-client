@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 function Food() {
   useEffect(() => {
     axios
-      .get("http://localhost:4500/api/food")
+      .get("https://blog-api-fetching.onrender.com/api/food")
       .then((res) => console.log(res.json))
       .catch(err => {
        console.log(err.message);
