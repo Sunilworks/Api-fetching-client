@@ -5,7 +5,7 @@ function Technology() {
   useEffect(() => {
     axios
       .get("https://blog-api-fetching.onrender.com/api/technology")
-      .then((res) => console.log(res.json))
+      .then((res) => console.log(res.data))
       .catch(err => {
        console.log(err.message);
   });
